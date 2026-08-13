@@ -6,7 +6,8 @@ Solution complète pour agences immobilières indépendantes : un agent IA qui q
 
 Ce repo contient le code de la landing page (ce qu'un prospect voit). L'automatisation elle-même tourne sur Make.com + l'API OpenAI — les captures ci-dessous montrent ce qui se passe derrière.
 
-Afficher l'image
+<img width="1477" height="785" alt="image" src="https://github.com/user-attachments/assets/2e2bea97-90c1-46be-aa5f-4ed06fe80a49" />
+
 
 Le problème résolu
 
@@ -21,36 +22,44 @@ Prise de rendez-vous automatique (Calendly) pour les leads chauds
 Suivi en temps réel dans une feuille Google Sheets
 Comment ça marche
 
-<img width="741" height="847" alt="image" src="https://github.com/user-attachments/assets/66ad4475-266d-4aa8-bc8f-1daa4275f250" />
+<img width="381" height="662" alt="image" src="https://github.com/user-attachments/assets/e403e209-a07a-4c9f-be6e-55225f7e5418" />
+
 
 
 Le lead remplit un formulaire Tally, l'IA analyse sa demande et le qualifie, le système route la conversation selon qu'il s'agit d'un projet d'achat ou de vente, un email personnalisé part automatiquement, puis une relance se déclenche si le lead reste silencieux.
 
-Afficher l'image
+<img width="741" height="847" alt="image" src="https://github.com/user-attachments/assets/f184d948-ad9c-43d5-8878-ba67e0286f3a" />
+
 
 L'automatisation derrière (Make.com)
 
 Trois scénarios Make orchestrent l'ensemble : capture du lead, qualification par IA, et relances programmées.
 
-Afficher l'image
+<img width="1532" height="272" alt="scenarios-overview" src="https://github.com/user-attachments/assets/5b36f5c4-7afa-4199-aec3-4dd04df07577" />
+
 
 Acquisition / premier contact — capture le lead depuis Tally, l'enregistre dans Google Sheets et route la notification selon le profil acheteur ou vendeur.
 
-Afficher l'image
+<img width="1681" height="727" alt="scenario-acquisition-premier-contact" src="https://github.com/user-attachments/assets/79bfed3d-c5f9-4261-9a9f-0955038fd245" />
+
 
 Qualification par IA — lit les emails entrants, appelle l'API OpenAI pour analyser la demande, puis met à jour la fiche du lead avec un score et un résumé.
 
-Afficher l'image
+<img width="1600" height="738" alt="scenario-reponse-email-ia" src="https://github.com/user-attachments/assets/ff176b11-7609-41a5-87d0-8dc6028704b3" />
+
 
 Relance J+1 / J+3 — vérifie toutes les 2 heures les leads sans réponse et déclenche l'email de relance approprié.
 
-Afficher l'image
+<img width="1516" height="732" alt="scenario-relance-j1-j3" src="https://github.com/user-attachments/assets/a84a5eb3-41e6-4056-b9ed-9e5d9722a91f" />
+
 
 Résultat côté agence
 
-Afficher l'image
+<img width="1048" height="411" alt="image" src="https://github.com/user-attachments/assets/1e314b91-7f41-45c2-98a6-7b17339a70a9" />
 
-Afficher l'image
+
+<img width="1736" height="340" alt="image" src="https://github.com/user-attachments/assets/35828f47-4cca-408f-bc37-38f4e9348e68" />
+
 
 Stack technique
 Brique	Rôle
